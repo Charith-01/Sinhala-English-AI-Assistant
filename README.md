@@ -10,7 +10,8 @@ Standard LLM evaluation benchmarks primarily focus on monolingual English or maj
 To design and build a lightweight, reproducible evaluation framework for systematically testing LLMs in a Sinhala-English business assistant context, generating quantitative performance metrics, failure pattern analyses, and structured technical reports.
 
 ## Business Use Case
-- **Scenario**: Controlled customer service environment for a fictional Sri Lankan e-commerce business.
+- **Scenario**: Controlled customer service environment for a fictional Sri Lankan e-commerce business (**LankaCart**).
+- **Ground-Truth Knowledge Base**: Defined in [`docs/business_rules.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/business_rules.md).
 - **Target Role**: AI Customer Support Assistant handling inquiries regarding order tracking, payment methods, delivery timelines, return policies, and product availability.
 
 ## Scope & Language Coverage
@@ -29,18 +30,21 @@ The framework focuses on key quality dimensions:
 
 ## Planned Workflow
 ```
+[ Ground-Truth Rules (docs/business_rules.md) ]
+                       │
+                       ▼
 [ Test Case Dataset (50+ cases) ]
-               │
-               ▼
+                       │
+                       ▼
 [ Execution Runner / LLM Interface ]
-               │
-               ▼
+                       │
+                       ▼
 [ Raw Model Responses Logging ]
-               │
-               ▼
+                       │
+                       ▼
 [ Evaluation & Scoring Engine ]
-               │
-               ▼
+                       │
+                       ▼
 [ Metrics, Analysis Tables & Visualizations ]
 ```
 
@@ -56,12 +60,13 @@ Sinhala-English-AI-Assistant/
 ├── results/                # Evaluation output data
 │   └── figures/            # Generated charts and visualization figures
 ├── tests/                  # Unit and integration tests
-├── docs/                   # Documentation and final report draft
+├── docs/                   # Documentation and project reports
+│   └── business_rules.md   # Ground-truth business policies & evaluation IDs
 ├── .gitignore              # Git ignore rules
 └── README.md               # Project overview documentation
 ```
 
 ## Current Project Status
-- **Phase 1 (Current - Project Setup)**: Workspace architecture established, directory layout created, and project guidelines documented.
-- **Phase 2 (Upcoming)**: Dataset creation (curating at least 50 structured test cases covering all 4 language modalities).
+- **Phase 1 (Complete)**: Repository structure established, workspace configured, and ground-truth business rules created in [`docs/business_rules.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/business_rules.md).
+- **Phase 2 (Upcoming)**: Dataset creation (curating at least 50 structured test cases covering all 4 language modalities mapped to policy IDs).
 - **Phase 3 (Upcoming)**: Execution pipeline, LLM integration, metric calculation, failure analysis, and report generation.
