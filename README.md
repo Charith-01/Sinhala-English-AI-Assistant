@@ -69,7 +69,49 @@ Sinhala-English-AI-Assistant/
 └── README.md                       # Project overview documentation
 ```
 
+## Setup & Configuration
+
+### 1. Model & Environment Setup
+The evaluation framework evaluates **Gemini 3.1 Flash-Lite** against the ground-truth LankaCart business policies.
+
+To configure your local environment:
+1. Copy the environment template:
+   ```bash
+   cp .env.example .env
+   ```
+2. Open `.env` and set your API key and Gemini model ID:
+   ```env
+   GEMINI_API_KEY=your_real_api_key
+   GEMINI_MODEL=gemini-3.1-flash-lite
+   ```
+   *(Note: Set `GEMINI_MODEL` to the exact API model identifier available in your Google AI Studio environment).*
+
+3. Install project dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### 2. Running Unit Tests
+Execute the unit test suite (runs offline using mocked API calls):
+```bash
+python -m unittest discover tests
+```
+
+### 3. Validating Test Cases
+Validate raw CSV test datasets against the schema and business policy IDs:
+```bash
+python scripts/validate_test_cases.py
+```
+
+### 4. Running Sample Response Generation
+To run the sample pipeline against the 4 development test cases:
+```bash
+python scripts/run_sample_evaluation.py
+```
+
+> **Pipeline Note**: The sample execution runner current processes 4 development test cases (`data/raw/sample_test_cases.csv`) to validate prompt construction, API connectivity, latency tracking, and response extraction. The full dataset (50+ cases) and automated scoring evaluation engines will be implemented in the next phase.
+
 ## Current Project Status
 - **Phase 1 (Complete)**: Workspace architecture established, ground-truth business rules documented in [`docs/business_rules.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/business_rules.md), evaluation methodology defined in [`docs/evaluation_plan.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/evaluation_plan.md), and schema specifications created in [`docs/test_case_schema.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/test_case_schema.md).
-- **Phase 2 (Upcoming)**: Dataset creation (curating the 60 structured test cases following `docs/test_case_schema.md`).
-- **Phase 3 (Upcoming)**: Execution pipeline, LLM integration, metric calculation, failure analysis, and report generation.
+- **Phase 2 (Complete)**: Response generation pipeline implemented using `google-genai` SDK for Gemini 3.1 Flash-Lite. Sample runner and 11 unit tests passing.
+- **Phase 3 (Upcoming)**: Dataset completion (60 structured test cases), automated metric scoring engine, failure pattern analysis, and technical report generation.
