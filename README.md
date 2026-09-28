@@ -52,21 +52,24 @@ The framework focuses on key quality dimensions:
 ```
 Sinhala-English-AI-Assistant/
 ├── data/
-│   ├── raw/                # Raw evaluation test cases and datasets
-│   └── processed/          # Prepared and validated test suites
-├── src/                    # Core source code and evaluation utilities
+│   ├── raw/
+│   │   └── test_cases_template.csv # Header template for dataset curation
+│   └── processed/                  # Prepared and validated test suites
+├── src/                            # Core source code and evaluation utilities
 │   └── __init__.py
-├── scripts/                # Utility scripts for execution and reporting
-├── results/                # Evaluation output data
-│   └── figures/            # Generated charts and visualization figures
-├── tests/                  # Unit and integration tests
-├── docs/                   # Documentation and project reports
-│   └── business_rules.md   # Ground-truth business policies & evaluation IDs
-├── .gitignore              # Git ignore rules
-└── README.md               # Project overview documentation
+├── scripts/                        # Utility scripts for execution and reporting
+├── results/                        # Evaluation output data
+│   └── figures/                    # Generated charts and visualization figures
+├── tests/                          # Unit and integration tests
+├── docs/                           # Project documentation & methodology
+│   ├── business_rules.md           # Ground-truth business policies & evaluation IDs
+│   ├── evaluation_plan.md          # Evaluation methodology, scoring rubric & test matrix
+│   └── test_case_schema.md         # Field specifications for test case curation
+├── .gitignore                      # Git ignore rules
+└── README.md                       # Project overview documentation
 ```
 
 ## Current Project Status
-- **Phase 1 (Complete)**: Repository structure established, workspace configured, and ground-truth business rules created in [`docs/business_rules.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/business_rules.md).
-- **Phase 2 (Upcoming)**: Dataset creation (curating at least 50 structured test cases covering all 4 language modalities mapped to policy IDs).
+- **Phase 1 (Complete)**: Workspace architecture established, ground-truth business rules documented in [`docs/business_rules.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/business_rules.md), evaluation methodology defined in [`docs/evaluation_plan.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/evaluation_plan.md), and schema specifications created in [`docs/test_case_schema.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/test_case_schema.md).
+- **Phase 2 (Upcoming)**: Dataset creation (curating the 60 structured test cases following `docs/test_case_schema.md`).
 - **Phase 3 (Upcoming)**: Execution pipeline, LLM integration, metric calculation, failure analysis, and report generation.
