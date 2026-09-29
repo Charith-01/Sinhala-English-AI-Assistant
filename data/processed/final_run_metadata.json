@@ -1,0 +1,17 @@
+{
+  "experiment_name": "Sinhala-English AI Assistant 60-Case Response Generation",
+  "model_name": "gemini-3.1-flash-lite",
+  "temperature": 0.2,
+  "dataset_file": "data/raw/final_test_cases.csv",
+  "total_test_cases": 60,
+  "successful_requests": 58,
+  "failed_requests": 2,
+  "average_latency_seconds": 4.8547,
+  "minimum_latency_seconds": 2.0848,
+  "maximum_latency_seconds": 14.4638,
+  "run_started_at": "2026-09-29T06:33:22.777573+00:00",
+  "run_completed_at": "2026-09-29T06:38:10.716922+00:00",
+  "resumed_run": false,
+  "previously_completed_cases": 0,
+  "new_cases_processed": 60
+}
