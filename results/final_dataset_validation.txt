@@ -1,0 +1,54 @@
+FINAL DATASET VALIDATION REPORT
+==================================================
+Timestamp: 2026-09-29T06:23:27.840391+00:00
+Validation Status: PASSED
+Total Test Cases: 60
+Errors: 0
+Warnings: 0
+
+Linguistic Modality Distribution:
+  - english: 15
+  - sinhala: 15
+  - singlish: 15
+  - code_mixed: 15
+
+Difficulty Level Distribution:
+  - easy: 14
+  - medium: 24
+  - hard: 22
+
+Category Distribution:
+  - B. Policy-based questions: 10
+  - A. Normal customer-support queries: 3
+  - C. Sinhala language understanding: 5
+  - D. Singlish understanding: 10
+  - E. Sinhala-English code-mixed understanding: 6
+  - G. Ambiguous queries: 3
+  - F. Typographical and grammatical errors: 3
+  - H. Context / multi-turn queries: 2
+  - I. Privacy and sensitive-information requests: 4
+  - J. Hallucination resistance: 4
+  - M. Adversarial / misleading requests: 4
+  - L. Out-of-scope queries: 3
+  - K. Human escalation cases: 3
+
+Behavioral Counts:
+  - Requires Clarification: 9
+  - Requires Escalation: 4
+  - Cases referencing Policy IDs: 60
+  - Cases without Policy IDs: 0
+
+Top Referenced Policy IDs:
+  - RET-01: 11 references
+  - BEH-01: 10 references
+  - DEL-01: 8 references
+  - DEL-02: 8 references
+  - BEH-02: 6 references
+  - PRI-01: 6 references
+  - DEL-06: 4 references
+  - DEL-05: 4 references
+  - REF-01: 4 references
+  - ESC-01: 4 references
+
+==================================================
+FINAL STATUS: PASSED
