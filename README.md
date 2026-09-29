@@ -110,7 +110,14 @@ python scripts/analyze_final_results.py
 ```
 *(Note: Requires completed human evaluation rows in `data/processed/final_evaluation_results.csv` or `data/processed/final_evaluation_worksheet.csv`).*
 
+### 6. Generating Visualization Charts & Result Tables
+To generate polished standalone PNG charts and formatted summary CSV tables:
+```bash
+python scripts/generate_charts.py
+```
+Generated artifacts are saved to `results/figures/` (PNG charts) and `results/tables/` (CSV summary tables). See [`docs/figures_and_tables.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/figures_and_tables.md) for the figure and table index.
+
 ## Current Project Status
 - **Phase 1 (Complete)**: Workspace architecture established, ground-truth business rules documented in [`docs/business_rules.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/business_rules.md), evaluation methodology defined in [`docs/evaluation_plan.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/evaluation_plan.md), and schema specifications created in [`docs/test_case_schema.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/test_case_schema.md).
 - **Phase 2 (Complete)**: Response generation pipeline implemented using `google-genai` SDK for Gemini 3.1 Flash-Lite. Sample runner and unit tests passing.
-- **Phase 3 (Complete)**: Final 60-case dataset curated, validated, and response generation experiment completed. Final human evaluation worksheet generated. Quantitative analysis module `src/metrics.py`, analysis script `scripts/analyze_final_results.py`, metrics definitions `docs/metrics_definition.md`, and 64 unit tests implemented.
+- **Phase 3 (Complete)**: Final 60-case dataset curated, validated, and response generation experiment completed. Final human evaluation worksheet generated. Quantitative analysis engine `src/metrics.py`, analysis script `scripts/analyze_final_results.py`, visualization module `src/visualization.py`, chart generator `scripts/generate_charts.py`, metrics definitions `docs/metrics_definition.md`, figures index `docs/figures_and_tables.md`, and 77 unit tests implemented.
