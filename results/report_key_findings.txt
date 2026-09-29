@@ -1,0 +1,14 @@
+==================================================
+EXECUTIVE RESULTS SNAPSHOT - KEY EXPERIMENT FINDINGS
+==================================================
+1. Model Evaluated:              Gemini 3.1 Flash-Lite (gemini-3.1-flash-lite)
+2. Evaluation Dataset Size:      60 test cases (15 English, 15 Sinhala, 15 Singlish, 15 Code-Mixed)
+3. Generation Success Rate:      96.67% (58/60)
+4. Technical API Failure Rate:   3.33% (2/60 503 capacity errors)
+5. Average API Response Latency: 4.7979 seconds
+6. Temperature Setting:          0.2 (Deterministic policy retrieval)
+7. Knowledge Base Grounding:     LankaCart Business Rules (docs/business_rules.md)
+8. Evaluation Rubric:            7 Dimensions (0-2 Scale, Max 14, Pass threshold >= 11/14)
+9. Ground-Truth Isolation:       Zero leakage (expected answers omitted from prompts)
+10. Human Evaluation Status:     58 generated model responses pending manual scoring
+==================================================
