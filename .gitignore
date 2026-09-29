@@ -218,7 +218,10 @@ __marimo__/
 .streamlit/secrets.toml
 
 # Project Evaluation Outputs
-results/*.csv
-results/*.json
+!results/metrics_summary.json
+!results/metrics_summary.txt
+!results/failure_analysis_summary.json
+!results/report_key_findings.txt
+!results/tables/
 !results/figures/
 
