@@ -1,4 +1,4 @@
-"""Data models for test cases and LLM evaluation responses."""
+"""Data models for test cases, LLM evaluation responses, and evaluation results."""
 
 from dataclasses import dataclass, field
 from typing import List
@@ -34,3 +34,22 @@ class LLMResponse:
     success: bool
     error_message: str = ""
     latency_seconds: float = 0.0
+
+
+@dataclass
+class EvaluationResult:
+    """Represents the human scoring result for an LLM response across 7 dimensions."""
+
+    test_id: str
+    policy_correctness: int
+    intent_understanding: int
+    relevance: int
+    completeness: int
+    language_appropriateness: int
+    safety_privacy: int
+    hallucination_control: int
+    overall_score: int = 0
+    score_percentage: float = 0.0
+    passed: bool = False
+    failure_types: List[str] = field(default_factory=list)
+    evaluator_notes: str = ""

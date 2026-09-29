@@ -1,0 +1,14 @@
+﻿test_id,language_type,difficulty,user_input,model_name,model_response,success,error_message,latency_seconds
+TC001,english,easy,What is the standard delivery fee and how long does it take for Colombo?,gemini-3.1-flash-lite,,False,[Errno 11001] getaddrinfo failed,11.9931
+TC002,sinhala,easy,මගේ ඇණවුම කැන්සල් කරන්න පුළුවන්ද?,gemini-3.1-flash-lite,,False,[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028),25.7029
+TC003,singlish,medium,mage order eka thama awe na. eka track karanne kohomada?,gemini-3.1-flash-lite,"ඔබේ ඇණවුම ලැබීමට ප්‍රමාද වීම ගැන කනගාටුයි. ඔබේ ඇණවුමෙහි තත්ත්වය පරීක්ෂා කර ගැනීමට (Track කිරීමට), කරුණාකර පහත විස්තර ලබා දෙන්න:
+
+1. **Order ID එක** (උදාහරණ: LC-XXXXXX)
+2. **ලියාපදිංචි දුරකථන අංකය හෝ විද්‍යුත් තැපැල් ලිපිනය (Email)**
+
+මෙම තොරතුරු ලබා දුන් පසු, මට ඔබේ ඇණවුමේ වත්මන් තත්ත්වය පරීක්ෂා කර බැලීමට උදව් කළ හැකිය.",True,,22.9971
+TC004,code_mixed,medium,Mage order eකට promo code එක apply වුණේ නෑ. Order placed එකට පස්සේ promo code add කරන්න පුළුවන්ද?,gemini-3.1-flash-lite,"හෙලෝ! LankaCart වෙත ඔබව සාදරයෙන් පිළිගනිමු.
+
+ඔබේ ප්‍රශ්නයට පිළිතුර නම්, අපගේ ප්‍රතිපත්තියට අනුව (PRO-01), දැනටමත් ඇණවුම් කර අවසන් වූ (placed) ඇණවුම් සඳහා ප්‍රවර්ධන කේත (promo codes) පසුව ඇතුළත් කිරීමට හෝ අදාළ කිරීමට හැකියාවක් නොමැත. ප්‍රවර්ධන කේත ඇණවුම තහවුරු කිරීමට පෙර පමණක් භාවිතා කළ යුතුය.
+
+ඔබට මේ සම්බන්ධයෙන් වැඩිදුර සහායක් අවශ්‍ය නම් හෝ වෙනත් ගැටලුවක් ඇත්නම්, කරුණාකර ඔබේ **Order ID** එක සහ ලියාපදිංචි දුරකථන අංකය ලබා දෙන්න. අපට එම තොරතුරු පරීක්ෂා කර බැලිය හැක.",True,,28.6582

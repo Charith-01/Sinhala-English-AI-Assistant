@@ -1,0 +1,8 @@
+{
+  "model_name": "gemini-3.1-flash-lite",
+  "temperature": 0.2,
+  "number_of_test_cases": 4,
+  "successful_requests": 2,
+  "failed_requests": 2,
+  "timestamp": "2026-09-28T18:04:12.237018+00:00"
+}
