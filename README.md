@@ -103,15 +103,14 @@ Validate raw CSV test datasets against the schema and business policy IDs:
 python scripts/validate_test_cases.py
 ```
 
-### 4. Running Sample Response Generation
-To run the sample pipeline against the 4 development test cases:
+### 5. Running Quantitative Analysis
+To calculate quantitative metrics once manual human evaluation scores are recorded:
 ```bash
-python scripts/run_sample_evaluation.py
+python scripts/analyze_final_results.py
 ```
-
-> **Pipeline Note**: The sample execution runner current processes 4 development test cases (`data/raw/sample_test_cases.csv`) to validate prompt construction, API connectivity, latency tracking, and response extraction. The full dataset (50+ cases) and automated scoring evaluation engines will be implemented in the next phase.
+*(Note: Requires completed human evaluation rows in `data/processed/final_evaluation_results.csv` or `data/processed/final_evaluation_worksheet.csv`).*
 
 ## Current Project Status
 - **Phase 1 (Complete)**: Workspace architecture established, ground-truth business rules documented in [`docs/business_rules.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/business_rules.md), evaluation methodology defined in [`docs/evaluation_plan.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/evaluation_plan.md), and schema specifications created in [`docs/test_case_schema.md`](file:///d:/Internship%20Tasks/Task%20-%202026.09.22/Sinhala-English-AI-Assistant/docs/test_case_schema.md).
-- **Phase 2 (Complete)**: Response generation pipeline implemented using `google-genai` SDK for Gemini 3.1 Flash-Lite. Sample runner and 11 unit tests passing.
-- **Phase 3 (Upcoming)**: Dataset completion (60 structured test cases), automated metric scoring engine, failure pattern analysis, and technical report generation.
+- **Phase 2 (Complete)**: Response generation pipeline implemented using `google-genai` SDK for Gemini 3.1 Flash-Lite. Sample runner and unit tests passing.
+- **Phase 3 (Complete)**: Final 60-case dataset curated, validated, and response generation experiment completed. Final human evaluation worksheet generated. Quantitative analysis module `src/metrics.py`, analysis script `scripts/analyze_final_results.py`, metrics definitions `docs/metrics_definition.md`, and 64 unit tests implemented.
